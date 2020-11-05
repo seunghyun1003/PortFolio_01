@@ -1,0 +1,104 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,p2,p3 blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+html{
+  font-family: 'Source Sans Pro';
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 200;
+	color: black;
+}
+
+body{
+  width: 60%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+footer,header,section{
+display:block;
+}
+
+/* Text Design */
+h1,h2,h3,h4 { margin-bottom: 1.5rem; }
+h1 { font-size: 3.157rem; line-height: 4.5rem; font-weight: 600; }
+h2 { font-size: 2.369rem; line-height: 3rem; font-weight: 600; }
+h3 { font-size: 1.7rem; line-height: 3rem; font-weight: 400; }
+h4 { font-size: 1.2rem; line-height: 1.5rem; font-weight: 200; }
+p { font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem; }
+.title { font-weight: 700; color: #46555C; }
+.order { color: #46555C; margin-right: 1.5rem; font-weight: 400;}
+
+/* Layout Design */
+.des_site {
+	padding: 1.5rem 0 3rem;
+}
+
+.contents{
+  color: #46555C;
+}
+
+footer {
+	padding: 1.5rem 0 0;
+	border-top: 1px solid lightgray;
+	margin-top: 3rem;
+}
+
+footer p { float: left; }
+footer a { float: right; }
+
+/* Link Design */
+.page-nav a {
+	display: block;
+	line-height: 3rem;
+	font-weight:500;
+	text-decoration: none;
+	color: #46555C;
+	font-weight: 300;
+}
+.page-nav a:hover { color: #B4CCD3; }
+
+.footer a {
+	display: block;
+	text-decoration: none;
+	color: #46555C;
+}
+.footer a:hover { color: #B4CCD3; }
+
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+	body {
+		width: 90%;
+		margin: 0 auto;
+	}
+	footer p {
+		float: none;
+	}
+	footer a {
+		float: none;
+		margin-top: -1.5rem;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+	body {
+		width: 80%;
+		margin: 0 auto;
+	}
+	footer p {
+		float: none;
+	}
+	footer a {
+		float: none;
+		margin-top: -1.5rem;
+	}
+}

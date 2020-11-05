@@ -1,0 +1,120 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,p2,p3 blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+html{
+  font-family: 'Source Sans Pro';
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 200;
+	color: black;
+}
+
+body{
+  width: 90%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+footer,header,section{
+display:block;
+}
+
+/* Type Design */
+h1 { font-size: 3.157rem; line-height: 4.5rem; font-weight: 600; }
+h2 { font-size: 1.333rem; font-weight:400; margin-top: 1.5rem; margin-bottom: 2rem; }
+h3 { font-size: 1.2rem; line-height: 3rem; font-weight: 600; }
+p { font-size: 1rem; font-weight:400; margin-top: 1.5rem; margin-bottom: 2rem; }
+.title { font-weight: 700; color: #6d819c; }
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    text-justify: center;
+}
+.des_flex {
+	padding: 1.5rem 0 1.5rem;
+  text-align: center;
+  color: #274555;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #263959;
+  padding: 8px 12px;
+}
+.navbar_logo{
+  display: flex;
+  justify-content: space-between;
+}
+.logo_title{
+  font-size: 16px;
+  font-weight: 400;
+}
+.navbar_toggleBtn{
+  display: none;
+  font-size: 16px;
+  position: absolute;
+  right: 52px;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 6px 12px;
+}
+.navbar_menu li:hover{
+  background: #6d819c;
+  border-radius: 4px;
+}
+
+/* 메뉴2. 반응형 메뉴 */
+@media screen and (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar_menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_logo{
+    margin: 4px 0;
+  }
+  .navbar_menu li{
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_toggleBtn{
+    display: block;
+  }
+
+  .navbar_menu.active{
+    display: flex;
+  }
+}

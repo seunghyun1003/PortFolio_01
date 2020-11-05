@@ -1,0 +1,118 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,p2,p3 blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+html{
+  font-family: 'Source Sans Pro';
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 200;
+	color: black;
+}
+
+body{
+  width: 90%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+footer,header,section{
+display:block;
+}
+
+
+/* Type Design */
+h1 { font-size: 3.157rem; line-height: 4.5rem; font-weight: 600; }
+h2 { font-size: 1.333rem; font-weight:400; margin-top: 1.5rem; margin-bottom: 2rem; }
+h3 { font-size: 1.2rem; line-height: 3rem; font-weight: 600; }
+p { font-size: 1rem; font-weight:400; margin-top: 1.5rem; margin-bottom: 2rem; }
+.title { font-weight: 700; color: #6d819c; }
+
+/* Layout Design */
+#wrapper { /*90%로 너비값*/
+    width: 90%;
+    margin: 0 auto;
+}
+header { /*헤더 %로 단위변경*/
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    text-justify: center;
+}
+.des_flex {
+	padding: 1.5rem 0 1.5rem;
+  text-align: center;
+  color: #274555;
+}
+
+
+/* 사용1. 네비게이션 바 */
+.container_name{
+  color: #6d819c;
+}
+
+.menu_nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-bottom: 2%;
+  background: #55967e;
+}
+.menu{
+  margin-right: 10px;
+  padding: 3px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.menu:hover{
+  background: #6d819c;
+  margin-right: 10px;
+  padding: 3px;
+  color: white;
+  border-radius: 4px;
+}
+
+
+/* 사용2. flex layout */
+.layout_container {
+  padding: 3%;
+  margin-bottom: 2%;
+  background: #55967e;
+}
+.flex_contents_section{
+  display: flex;
+}
+
+.header2, .article, .aside, .nav, .footer{
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 1rem; font-weight:400;
+}
+.article, .aside, .nav{
+  height: 200px;
+  line-height: 200px;
+  margin: 5px 0 5px;
+}
+.article{
+  flex: 3;
+  margin-right: 5px;
+}
+.aside {
+  flex: 1;
+  margin-right: 5px;
+}
+.nav{
+  flex: 1;
+}
